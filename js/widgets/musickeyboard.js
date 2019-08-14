@@ -1286,6 +1286,8 @@ function MusicKeyboard() {
                 myrow2Id++;
                 newel2.innerHTML = '';
                 newel2.style.visibility = 'hidden';
+                newel2.style.position = 'relative';
+                newel2.style.zIndex = '200';
                 parenttbl2.appendChild(newel2);
             } else if (this.layout[p][0] === 'hertz') {
                 var parenttbl = document.getElementById('myrow');
@@ -1325,6 +1327,8 @@ function MusicKeyboard() {
                     newel2.innerHTML = '<small>('+String.fromCharCode(BLACKKEYS[myrow2Id])+')</small><br/>'+this.layout[p][0] + this.layout[p][1];
                 }
                 myrow2Id++;
+                newel2.style.position = 'relative';
+                newel2.style.zIndex = '200';
                 parenttbl2.appendChild(newel2);
                 
             } else if (this.layout[p][0].indexOf(FLAT) !== -1 || this.layout[p][0].indexOf('b') !== -1) {
@@ -1353,6 +1357,8 @@ function MusicKeyboard() {
                     newel2.innerHTML = '<small>('+String.fromCharCode(BLACKKEYS[myrow2Id])+')</small><br/>'+this.layout[p][0] + this.layout[p][1];
                 }
                 myrow2Id++;
+                newel2.style.position = 'relative';
+                newel2.style.zIndex = '200';
                 parenttbl2.appendChild(newel2);
             } else {
                 var parenttbl = document.getElementById('myrow');
